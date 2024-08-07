@@ -9,7 +9,7 @@ export default function Scene1() {
     return (
         <div className='h-[100vh] flex items-center justify-center'>
             <h1 onMouseOver={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className="text-[4.5vw] max-w-[90vw] text-center text-white z-50 p-20">
-                Hi, Im Mansur Akidah
+                Hi, I'm Mansur Akidah
             </h1>
             <GradientCursor isActive={isActive}/>
         </div>

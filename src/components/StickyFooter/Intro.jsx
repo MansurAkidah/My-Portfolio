@@ -1,9 +1,15 @@
 import React from 'react'
+import GsapMagnetic from '../StickyFooter/gasp';
+import FramerMagnetic from '../StickyFooter/framer';
+import styles from './../../app/page.module.scss'
 
 export default function Intro() {
   return (
+  <div>
     <div className='h-screen flex text-[2vw] items-center justify-center'>
-        <h2 className='max-w-[45%] text-center leading-none'>This is an example of a sticky footer made with CSS.</h2>
+        <h2 className='max-w-[45%] text-center leading-none'>Thats all for now</h2>
     </div>
+    
+</div>
   )
 }

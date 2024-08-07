@@ -9,4 +9,21 @@
       max-width: 80%;
       font-weight: 400;
     }
-  }
+    .container{
+        display: flex;
+        //height: 100vh; // equivalent to h-screen
+        font-size: 2vw; // equivalent to text-[2vw]
+        align-items: center; // equivalent to items-center
+        justify-content: center;
+        svg{
+            height: 50px;
+            padding: 50px;
+            fill: #c8bdb0;
+            transition: fill 0.2s;
+            cursor: pointer;
+            &:hover{
+                fill: #ec4e39;
+            }
+        }
+    }
+}
