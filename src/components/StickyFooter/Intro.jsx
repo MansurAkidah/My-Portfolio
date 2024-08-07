@@ -1,7 +1,4 @@
 import React from 'react'
-import GsapMagnetic from '../StickyFooter/gasp';
-import FramerMagnetic from '../StickyFooter/framer';
-import styles from './../../app/page.module.scss'
 
 export default function Intro() {
   return (

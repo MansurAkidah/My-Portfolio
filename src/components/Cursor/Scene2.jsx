@@ -12,7 +12,7 @@ export default function Scene2() {
                 Hi, im Mansur Akidah
             </h1> */}
             <h2 onMouseOver={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className="text-[2.5vw] max-w-[90vw] text-center text-white p-20">
-                Here's my attempt at showcasing my journey in design and development.
+                Here's my attempt at showcasing my journey in design and development .
             </h2>
             <Cursor isActive={isActive}/>
         </div>
