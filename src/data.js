@@ -19,59 +19,68 @@ export {
 }
 export const projects = [
     {
-        name: "Google Pixel Creator Labs",
-        client: "Grow",
-        description: "A partnership between Google & SN37.",
+        name: "GearHut",
+        client: "Hael",
+        description: "An E-Commerce platform for retail accessory shop in Nairobi.",
         src: "Screenshot (233).png",
         year: 2023,
+        url:"https://g-hut-eight.vercel.app/"
     },
     {
-        name: "Decimal",
-        client: "Decimal",
-        description: "Portfolio site for Decimal.",
+        name: "Meditation App",
+        client: "School Project",
+        description: "A multimedia platform for meditation.",
         src: "Screenshot (234).png",
         year: 2023,
+        url:"https://github.com/Merns999/MediApp"
     },
     {
-        name: "MAVEN 11",
-        client: "analogueagency",
-        description: "New web design for the blockchain investment fund Maven 11.",
+        name: "QR Generator",
+        client: "Personal",
+        description: "An android application for generating QR codes on text prompts",
         src: "Screenshot (235).png",
         year: 2022,
+        url:"https://github.com/Merns999/QRGenerator"
     },
     {
-        name: "Wix Playground Homepage",
-        client: "Wix Playground",
-        description: "Wix Playground is powered by the Wix.com design team.",
+        name: "E-migration",
+        client: "Leizam Ventures",
+        description: "A website used by emigration agencies to make the process frictionless",
         src: "Screenshot (238).png",
         year: 2022,
+        url:"https://www.example.com"
     },
     {
-        name: "POWELL—STUDIO",
-        client: "POWELL—STUDIO",
-        description: "The online presence for Powell—Studio.",
+        name: "Finalis",
+        client: "Leizam Ventures",
+        description: "A hispital website for maintaining the patients records",
         src: "Screenshot (239).png",
         year: 2023,
+        url:"https://www.example.com"
     },
     {
-        name: "ROCKETPANDA",
-        client: "ET Studio",
-        description: "An Italian animation studio.",
+        name: "The Flash",
+        client: "Personal",
+        description: "An android application that allows one to turn the flash on",
         src: "Screenshot (243).png",
         year: 2022,
+        url:"https://github.com/Merns999/TheFlash"
     },
     {
-        name: "C2 Montreal",
-        client: "Ingamana",
-        description: "C2 Montréal is Canada's premier creative-business event.",
-        src: "Screenshot (245).png",
+        name: "Golden Ticket",
+        client: "Leizam Ventures, Airtel Kenya",
+        description: "A ticketing system that helps manage and track support requests and customer inquiries.",
+        // src: "Screenshot (245).png",
+        src: "Mans.jpg",
         year: 2021,
+        url:"https://www.example.com"
     },
     {
-        name: "Design Is Funny",
-        client: "Shader Studio",
-        description: "Funny is the design work of Daniele Buffa.",
+        name: "Fraud Detection system",
+        client: "School System",
+        description: "A FDS that uses Machine Learning to predict frauds and flags them.",
         src: "Screenshot (246).png",
         year: 2020,
+        url:"https://www.example.com"
     }
 ]

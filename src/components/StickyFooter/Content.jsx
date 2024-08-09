@@ -4,6 +4,7 @@ export default function Content() {
   return (
     <div className='bg-[#4E4E5A] py-8 px-12 h-full w-full flex flex-col justify-between'>
         <Section1 />
+        
         <Section2 />
     </div>
   )
@@ -25,6 +26,7 @@ const Section2 = () => {
         </div>
     )
 }
+
 
 const Nav = () => {
     return (

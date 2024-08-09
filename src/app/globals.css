@@ -35,6 +35,8 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+@import '~locomotive-scroll/dist/locomotive-scroll.css';
+
 @font-face {
   font-family: 'Serif';
   src: url('../../public/fonts/PPNeueWorld-Regular.otf');

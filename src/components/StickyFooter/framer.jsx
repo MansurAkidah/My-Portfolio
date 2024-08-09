@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 export default function Framer({children}) {
     const ref = useRef(null);
