@@ -11,7 +11,7 @@ export default function Scene2() {
             {/* <h1 onMouseOver={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className="text-[4.5vw] max-w-[90vw] text-center text-white p-20">
                 Hi, im Mansur Akidah
             </h1> */}
-            <h2 onMouseOver={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className="text-[2.5vw] max-w-[90vw] text-center text-white p-20">
+            <h2 onMouseOver={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className="text-[6.5vw] max-w-[90vw] text-center text-white p-10">
                 Here&apos;s my attempt at showcasing my journey in design and development .
             </h2>
             <Cursor isActive={isActive}/>
