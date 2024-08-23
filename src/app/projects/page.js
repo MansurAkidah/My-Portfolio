@@ -7,7 +7,7 @@ import Landing from '../projects/components/Landing';
 import Projects from '../projects/components/ProjectsList';
 import Description from '../projects/components/Description';
 // import SlidingImages from '../components/SlidingImages';
-// import Contact from '../components/Contact';
+import Contact from '../projects/components/Contacts';
 
 export default function Home() {
 
@@ -19,11 +19,11 @@ export default function Home() {
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
 
-          setTimeout( () => {
-            setIsLoading(false);
-            document.body.style.cursor = 'default'
-            window.scrollTo(0,0);
-          }, 2000)
+          // setTimeout( () => {
+          //   setIsLoading(false);
+          //   document.body.style.cursor = 'default'
+          //   window.scrollTo(0,0);
+          // }, 2000)
       }
     )()
   }, [])
@@ -36,8 +36,8 @@ export default function Home() {
       <Landing />
       <Description />
       <Projects />
-      {/* <SlidingImages />
-      <Contact /> */}
+      {/* <SlidingImages />*/}
+      <Contact /> 
     </main>
   )
 }
