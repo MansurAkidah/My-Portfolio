@@ -3,11 +3,11 @@ import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
 // import Preloader from '../components/Preloader';
-import Landing from '../projects/components/Landing';
+import Landing from './components/Landing/Index';
 import Projects from '../projects/components/ProjectsList';
-import Description from '../projects/components/Description';
+import Description from './components/Description/Index';
 // import SlidingImages from '../components/SlidingImages';
-import Contact from '../projects/components/Contacts';
+import Contact from './components/Contacts/Index';
 
 export default function Home() {
 

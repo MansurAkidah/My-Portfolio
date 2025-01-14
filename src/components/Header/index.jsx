@@ -13,7 +13,7 @@ export default function index() {
     return (
         <div className={styles.header}>
             <div className={styles.bar}>
-                <Link href="/" className={styles.la}>Akidah</Link>
+                <Link href="/" className={styles.la}>Mansur Akidah</Link>
                 {/* <motion.p variants={opacity} animate={!isActive ? "open" : "closed"}>Akidah</motion.p>
                 <motion.p variants={opacity} animate={isActive ? "open" : "closed"}>Mansur</motion.p> */}
                 <div onClick={() => {setIsActive(!isActive)}} className={styles.el}>

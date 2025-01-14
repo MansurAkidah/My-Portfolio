@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { height } from '../anim';
-import Body from './Body';
+import Body from './Body/Index';
 import Footer from './Footer';
 import Image from './Image';
 
