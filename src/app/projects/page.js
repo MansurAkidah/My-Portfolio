@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
 // import Preloader from '../components/Preloader';
 import Landing from './components/Landing/Index';
-import Projects from '../projects/components/ProjectsList';
+import Projects from './components/ProjectsList/Index';
 import Description from './components/Description/Index';
 // import SlidingImages from '../components/SlidingImages';
 import Contact from './components/Contacts/Index';
