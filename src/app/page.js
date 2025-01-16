@@ -3,7 +3,7 @@ import styles from './page.module.scss'
 import { projects, projectsHome } from '@/data';
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, useScroll } from 'framer-motion';
 import ZoomParallax from '../components/ZoomParallax/index';
 import Footer from "@/components/StickyFooter/Footer1";
 import Intro from "@/components/StickyFooter/Intro";
@@ -13,7 +13,6 @@ import Image from 'next/image';
 import Double from '../components/double';
 import Scene1 from '@/components/Cursor/Scene1';
 import Scene2 from '@/components/Cursor/Scene2';
-import Skills from '@/components/Cursor/Skills';
 import Preloader from '../components/Preloader';
 import gsap from 'gsap';
 import Card from '@/components/Card/index';
@@ -29,11 +28,11 @@ export default function Home() {
   const easing = 0.08;
   const speed = 0.01;
 
-  // const container = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: container,
-  //   offset: ['start start', 'end end']
-  // })
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end']
+  })
 
   const manageMouseMove = (e) => {
     const { movementX, movementY } = e
@@ -66,23 +65,23 @@ export default function Home() {
     }
   }
   const [isLoading, setIsLoading] = useState(true);
-  useEffect( () => {
-    const lenis = new Lenis()
-    
-    function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-    const handleTimeout = async () => {
-      setTimeout( () => {
-        setIsLoading(false);
-        document.body.style.cursor = 'default'
-        window.scrollTo(0,0);
-      }, 3000)
-    }
-    handleTimeout();
-  },[])
+    useEffect( () => {
+      const lenis = new Lenis()
+      
+      function raf(time) {
+          lenis.raf(time)
+          requestAnimationFrame(raf)
+      }
+      requestAnimationFrame(raf)
+      const handleTimeout = async () => {
+        setTimeout( () => {
+          setIsLoading(false);
+          document.body.style.cursor = 'default'
+          window.scrollTo(0,0);
+        }, 3000)
+      }
+      handleTimeout();
+    },[])
 
   return (
     <main onMouseMove={(e) => {manageMouseMove(e)}} className={styles.main}>
@@ -96,13 +95,13 @@ export default function Home() {
           <Scene1 />
       <ZoomParallax />
       <Scene2 />
-      {/* {
+      {
         projectsHome.map( (project, i) => {
           const targetScale = 1 - ( (projectsHome.length - i) * 0.05);
           return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
         })
-      } */}
-      <Skills />
+      }
+      
       {/* <Gsap/> */}
       {/* <h3>We use design and technology to create brands and products that perform, delight, and scale.</h3> */}
       {/* <div className={styles.gallery}>
@@ -112,7 +111,7 @@ export default function Home() {
         <Double projects={[projects[6], projects[7]]} reversed={true}/>
       </div> */}
       
-      <Intro />
+      {/* <Intro /> */}
       <Footer />
         </>
       )}

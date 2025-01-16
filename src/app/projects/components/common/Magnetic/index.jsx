@@ -21,7 +21,14 @@ export default function Index({children}) {
             xTo(0);
             yTo(0)
         })
-    }, [])
+
+        return () => {
+            if (magnetic.current) {
+                magnetic.current.removeEventListener("mousemove", handleMouseMove)
+                magnetic.current.removeEventListener("mouseleave", handleMouseLeave)
+            }
+        }
+    }, [children])
 
     return (
         React.cloneElement(children, {ref:magnetic})
