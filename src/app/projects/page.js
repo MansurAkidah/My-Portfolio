@@ -3,13 +3,13 @@ import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
 // import Preloader from '../components/Preloader';
-import Landing from './components/Landing/Index';
-import Projects from './components/ProjectsList/Index';
-import Description from './components/Description/Index';
+import Landing from '../projects/components/Landing/Index';
+import Projects from '../projects/components/ProjectsList/Index';
+import Description from '../projects/components/Description/Index';
+import Contact from '../projects/components/Contacts/Index';
 // import SlidingImages from '../components/SlidingImages';
-import Contact from './components/Contacts/Index';
 
-export default function Home() {
+export default function Index() {
 
   const [isLoading, setIsLoading] = useState(true);
 
