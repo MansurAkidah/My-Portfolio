@@ -16,7 +16,6 @@ import Scene2 from '@/components/Cursor/Scene2';
 import Preloader from '../components/Preloader';
 import gsap from 'gsap';
 import Card from '@/components/Card/index';
-import Projects from '@/components/Projects';
 import GsapMagnetic from '../components/StickyFooter/gasp';
 
 export default function Home() {
@@ -111,6 +110,7 @@ export default function Home() {
         <Double projects={[projects[4], projects[5]]}/>
         <Double projects={[projects[6], projects[7]]} reversed={true}/>
       </div> */}
+
       {/* <Intro /> */}
       <Footer />
         </>
