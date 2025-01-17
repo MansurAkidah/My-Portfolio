@@ -7,6 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import ZoomParallax from '../components/ZoomParallax/index';
 import Footer from "@/components/StickyFooter/Footer1";
 import Intro from "@/components/StickyFooter/Intro";
+import Header from "@/components/Header"
 import Lenis from '@studio-freight/lenis'
 import Image from 'next/image';
 import Double from '../components/double';
@@ -85,6 +86,7 @@ export default function Home() {
       </AnimatePresence>
       {!isLoading && (
         <>
+        <Header />
           <Scene1 />
       <ZoomParallax />
       <Scene2 />
