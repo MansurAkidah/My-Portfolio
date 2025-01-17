@@ -1,9 +1,9 @@
 'use client'
 import styles from './page.module.scss'
-import { projects } from '@/data';
+import { projects, projectsHome  } from '@/data';
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, useScroll  } from 'framer-motion';
 import ZoomParallax from '../components/ZoomParallax/index';
 import Footer from "@/components/StickyFooter/Footer1";
 import Intro from "@/components/StickyFooter/Intro";
@@ -15,6 +15,7 @@ import Scene1 from '@/components/Cursor/Scene1';
 import Scene2 from '@/components/Cursor/Scene2';
 import Preloader from '../components/Preloader';
 import gsap from 'gsap';
+import Card from '@/components/Card/index';
 import Projects from '@/components/Projects';
 import GsapMagnetic from '../components/StickyFooter/gasp';
 
@@ -28,6 +29,12 @@ export default function Home() {
   let yForce = 0;
   const easing = 0.08;
   const speed = 0.01;
+
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end']
+  })
 
   const manageMouseMove = (e) => {
     const { movementX, movementY } = e
@@ -90,15 +97,21 @@ export default function Home() {
           <Scene1 />
       <ZoomParallax />
       <Scene2 />
+
+      {
+        projectsHome.map( (project, i) => {
+          const targetScale = 1 - ( (projectsHome.length - i) * 0.05);
+          return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+        })
+      }
       {/* <h3>We use design and technology to create brands and products that perform, delight, and scale.</h3> */}
-      <div className={styles.gallery}>
+      {/* <div className={styles.gallery}>
         <Double projects={[projects[0], projects[1]]}/>
         <Double projects={[projects[2], projects[3]]} reversed={true}/>
         <Double projects={[projects[4], projects[5]]}/>
         <Double projects={[projects[6], projects[7]]} reversed={true}/>
-      </div>
-      
-      <Intro />
+      </div> */}
+      {/* <Intro /> */}
       <Footer />
         </>
       )}
