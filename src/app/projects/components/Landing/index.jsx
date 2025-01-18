@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 
-export default function index() {
+export default function Index() {
     const firstText = useRef(null);
     const secondText = useRef(null);
     const slider = useRef(null);
@@ -45,7 +45,7 @@ export default function index() {
     return (
         <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
             <Image 
-                src="/images/stone4.png"
+                src="/images/Screenshot (238).png"
                 fill={true}
                 alt="background"
             />
