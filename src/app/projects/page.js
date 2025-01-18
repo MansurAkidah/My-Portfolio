@@ -6,8 +6,9 @@ import { AnimatePresence } from 'framer-motion';
 import Landing from '../projects/components/Landing/index';
 // import Projects from '../projects/components/ProjectsList/Index';
 // import Description from '../projects/components/Description/Index';
-// import Contact from '../projects/components/Contacts/Index';
+// import Contact from '../projects/components/Contacts/index';
 // import SlidingImages from '../components/SlidingImages';
+import Header from "@/components/Header"
 
 export default function Index() {
 
@@ -33,6 +34,7 @@ export default function Index() {
       {/* <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence> */}
+      <Header />
       <Landing />
       {/* <Description />
       <Projects /> */}
