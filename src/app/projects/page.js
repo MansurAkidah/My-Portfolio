@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
 // import Preloader from '../components/Preloader';
 import Landing from '../projects/components/Landing/index';
+import Description from '../projects/components/Description/Index';
 // import Projects from '../projects/components/ProjectsList/Index';
-// import Description from '../projects/components/Description/Index';
 // import Contact from '../projects/components/Contacts/index';
 // import SlidingImages from '../components/SlidingImages';
 import Header from "@/components/Header"
@@ -36,8 +36,8 @@ export default function Index() {
       </AnimatePresence> */}
       <Header />
       <Landing />
-      {/* <Description />
-      <Projects /> */}
+      <Description />
+      {/* <Projects /> */}
       {/* <SlidingImages />*/}
       {/* <Contact />  */}
     </main>

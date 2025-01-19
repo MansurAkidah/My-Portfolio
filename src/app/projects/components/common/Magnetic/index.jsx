@@ -22,6 +22,20 @@ export default function Index({children}) {
             yTo(0)
         })
 
+        const handleMouseMove = (e) => {
+            const { clientX, clientY } = e;
+            const { height, width, left, top } = magnetic.current.getBoundingClientRect();
+            const x = clientX - (left + width / 2);
+            const y = clientY - (top + height / 2);
+            xTo(x);
+            yTo(y);
+        };
+
+        const handleMouseLeave = () => {
+            xTo(0);
+            yTo(0);
+        };
+
         return () => {
             if (magnetic.current) {
                 magnetic.current.removeEventListener("mousemove", handleMouseMove)
