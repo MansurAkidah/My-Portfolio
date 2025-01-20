@@ -15,16 +15,16 @@ export default function Index() {
     const directionRef = useRef(-1);
 
     const animate = useCallback(() => {
-        if(xPercentRef.current < -100){
+        if(xPercentRef.current < -10){
             xPercentRef.current = 0;
         }
         else if(xPercentRef.current > 0){
-            xPercentRef.current = -100;
+            xPercentRef.current = -10;
         }
         gsap.set(firstText.current, {xPercent: xPercentRef.current})
-        gsap.set(secondText.current, {xPercent: xPercentRef.current})
+        // gsap.set(secondText.current, {xPercent: xPercentRef.current})
         requestAnimationFrame(animate);
-        xPercentRef.current += 0.1 * directionRef.current;
+        xPercentRef.current += 0.01 * directionRef.current;
     }, []);
 
     useLayoutEffect(() => {
@@ -37,7 +37,7 @@ export default function Index() {
                 end: window.innerHeight,
                 onUpdate: e => directionRef.current = e.direction * -1
             },
-            x: "-500px",
+            x: "-1000px",
         })
         requestAnimationFrame(animate);
     }, [animate]);
@@ -51,8 +51,8 @@ export default function Index() {
             />
             <div className={styles.sliderContainer}>
                 <div ref={slider} className={styles.slider}>
-                    <p ref={firstText}>Designer & Developer -</p>
-                    <p ref={secondText}>Freelance Designer -</p>
+                    <p ref={firstText}>Designer & Developer</p>
+                    {/* <p ref={secondText}> FullStack Development -</p> */}
                 </div>
             </div>
             <div data-scroll data-scroll-speed={0.1} className={styles.description}>
