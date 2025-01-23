@@ -5,7 +5,7 @@ import { slideUp, opacity } from './animation';
 import Rounded from '../common/RoundedBottom/index';
 export default function Index() {
 
-    const phrase = "Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.";
+    const phrase = "One line at a time, one bug at a time, one error at a time. With the various hours dedicated, these projects saw the day of light.";
     const description = useRef(null);
     const isInView = useInView(description)
     return (

@@ -11,31 +11,31 @@ const links = [
   {
     title: "Home",
     href: "/",
-    src: "screenshot (233).png",
+    src: "home2.png",
     download: false
   },
   {
     title: "About Me",
     href: "/about",
-    src: "me.jpg",
+    src: "black suit.jpg",
     download: false
   },
   {
     title: "Projects",
     href: "/projects",
-    src: "screenshot (233).png",
+    src: "logo 1.png",
     download: false
   },
   {
     title: "Contacts",
     href: "/contact",
-    src: "screenshot (235).png",
+    src: "face.jpg",
     download: false
   },
   {
     title: "Resume",
     href: "/mansur_resume.pdf",
-    src: "screenshot (247).png",
+    src: "home3.png",
     download: true
   }
 ]

@@ -11,22 +11,51 @@ const projects = [
   {
     title: "Meditation App",
     src: "stone.png",
+    category:"Android",
+    link:"www.example.com",
+    color: "#000000"
+  },
+  {
+    title: "Real Estate Web App",
+    src: "stone.png",
+    category:"Web",
+    link:"www.example.com",
     color: "#000000"
   },
   {
     title: "Fraud Detection System",
     src: "stone1.png",
+    category:"Web",
+    link:"www.example.com",
     color: "#8C8C8C"
   },
   {
-    title: "Movies Recommender",
-    src: "stone2.png",
+    title: "ECommerce System",
+    src: "gearhut.png",
+    category:"Web",
+    link:"www.example.com",
     color: "#EFE8D3"
   },
   {
-    title: "To Do App",
+    title: "Sacco System",
+    src: "stone2.png",
+    category:"Web",
+    link:"www.example.com",
+    color: "#EFE8D3"
+  },
+  {
+    title: "QR Code Generator App",
     src: "stone4.png",
+    category:"Android",
+    link:"www.example.com",
     color: "#706D63"
+  },
+  {
+    title: "POS System",
+    src: "pos.png",
+    category:"Web",
+    link:"www.example.com",
+    color: "#EFE8D3"
   }
 ]
 
@@ -81,7 +110,7 @@ export default function Index() {
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} manageModal={manageModal} key={index}/>
+          return <Project index={index} title={project.title} link={project.link} cat={project.category} manageModal={manageModal} key={index}/>
         })
       }
     </div>
@@ -93,21 +122,49 @@ export default function Index() {
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
             {
                 projects.map( (project, index) => {
-                const { src, color } = project
+                const { src, color, link  } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
-                    <Image 
+                    {/* <Image 
                     src={`/images/${src}`}
                     width={300}
                     height={0}
                     alt="image"
+                    /> */}
+                    <a 
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className={styles.modal} 
+                    style={{backgroundColor: color}} 
+                    key={`modal_${index}`}
+                  >
+                    <Image
+                      src={`/images/Projects/${src}`}
+                      width={500}
+                      height={0}
+                      alt="image"
                     />
+                  </a>
                 </div>
                 })
             }
             </div>
         </motion.div>
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
+        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>
+        <a 
+          ref={cursorLabel}
+          href={projects[index]?.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.cursorLabel} 
+          variants={scaleAnimation} 
+          initial="initial" 
+          animate={active ? "enter" : "closed"}
+        >
+          View
+        </a>
+        </motion.div>
     </>
   </main>
   )

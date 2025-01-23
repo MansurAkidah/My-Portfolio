@@ -3,12 +3,13 @@ import styles from './styles.module.scss';
 
 import Picture0 from '../../../public/images/Mans.jpg';
 import Picture1 from '../../../public/images/me.jpg';
-import Picture2 from '../../../public/images/Screenshot (234).png';
-import Picture3 from '../../../public/images/Screenshot (235).png';
-import Picture4 from '../../../public/images/Screenshot (233).png'
-import Picture5 from '../../../public/images/Screenshot (238).png'
-import Picture6 from '../../../public/images/Screenshot (243).png'
-import Picture7 from '../../../public/images/Screenshot (239).png'
+import Picture2 from '../../../public/images/black suit.jpg';
+import Picture3 from '../../../public/images/black suit.jpg';
+import Picture4 from '../../../public/images/black suit.jpg';
+import Picture5 from '../../../public/images/black suit.jpg';
+import Picture6 from '../../../public/images/black suit.jpg';
+import Picture7 from '../../../public/images/black suit.jpg';
+import Picture8 from '../../../public/images/command2.png';
 import Image from 'next/image';
 import { useScroll, useTransform, motion} from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
@@ -34,7 +35,7 @@ export default function Index() {
             const isMobile = window.matchMedia("(max-width: 768px)").matches;
             const updatedPictures = [
                 {
-                    src: isMobile ? Picture1 : Picture3,
+                    src: isMobile ? Picture1 : Picture8,
                     scale: scale4
                 },
                 {
