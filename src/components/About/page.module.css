@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100vh;
+    color: rgb(211, 211, 211);
+}
+
+.body {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body p {
+    font-size: 2.5vw;
+    margin: 0;
+    margin-right: 1.5vw;
+    font-weight: 700;
+}
+
+.body span {
+    opacity: 0.2;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .main {
+        height: 80vh;  /* Slightly reduced height for mobile */
+        margin-bottom: 50vh;  /* Reduced bottom margin for mobile */
+    }
+
+    .body {
+        width: 95%;  /* Slightly wider on mobile for better readability */
+    }
+
+    .body p {
+        font-size: 5vw;  /* Larger font size for mobile readability */
+        margin-right: 2vw;  /* Increased spacing between words */
+        margin-bottom: 1vh;  /* Add some vertical spacing between wrapped lines */
+    }
+}
+
+/* Small mobile styles */
+@media screen and (max-width: 480px) {
+    .body p {
+        font-size: 6vw;  /* Even larger font for very small screens */
+        margin-right: 3vw;
+    }
+}

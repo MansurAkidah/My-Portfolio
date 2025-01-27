@@ -16,7 +16,7 @@ import Scene2 from '@/components/Cursor/Scene2';
 import Preloader from '../components/Preloader';
 import gsap from 'gsap';
 import Card from '@/components/Card/index';
-import GsapMagnetic from '../components/StickyFooter/gasp';
+import Phrase from '@/components/About/phrase';
 
 export default function Home() {
 
@@ -93,9 +93,10 @@ export default function Home() {
       {!isLoading && (
         <>
         <Header />
-          <Scene1 />
-      <ZoomParallax />
-      <Scene2 />
+        <Scene1 />
+        <Phrase />
+        <ZoomParallax />
+        <Scene2 />
 
       {
         projectsHome.map( (project, i) => {
