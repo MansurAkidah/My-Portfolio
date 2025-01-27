@@ -96,7 +96,7 @@ export default function Home() {
         <Scene1 />
         <Phrase />
         <ZoomParallax />
-        <Scene2 />
+        {/* <Scene2 /> */}
 
       {
         projectsHome.map( (project, i) => {

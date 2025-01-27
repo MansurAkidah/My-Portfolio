@@ -23,8 +23,8 @@ export default function Scene1() {
                     (Full-Stack Software Developer)
                 </p>
                 <p className="max-w-xl text-sm lg:text-base text-gray-500">
-                    Passionate about creating robust, scalable applications with a focus on user experience. 
-                    Experienced in both front-end and back-end development, with a strong foundation in multiple programming languages and frameworks.
+                    Designer and developer, Passionate about creating and designing robust, scalable applications. 
+                    Experienced in both front-end and back-end development, with a strong foundation in multiple programming languages and frameworks. Scroll to find out more.
                 </p>
                 <div className="mt-6 lg:mt-8">
                     <FontAwesomeIcon icon="fa-solid fa-chevron-down" color="white" className="animate-bounce"/>

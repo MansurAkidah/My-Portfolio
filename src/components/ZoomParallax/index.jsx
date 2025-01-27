@@ -9,7 +9,7 @@ import Picture4 from '../../../public/images/black suit.jpg';
 import Picture5 from '../../../public/images/black suit.jpg';
 import Picture6 from '../../../public/images/black suit.jpg';
 import Picture7 from '../../../public/images/black suit.jpg';
-import Picture8 from '../../../public/images/command2.png';
+import Picture8 from '../../../public/images/projects.png';
 import Image from 'next/image';
 import { useScroll, useTransform, motion} from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
