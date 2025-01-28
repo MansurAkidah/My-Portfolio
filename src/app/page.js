@@ -17,6 +17,7 @@ import Preloader from '../components/Preloader';
 import gsap from 'gsap';
 import Card from '@/components/Card/index';
 import Phrase from '@/components/About/phrase';
+import Experience from '@/components/Experience/experience';
 
 export default function Home() {
 
@@ -95,6 +96,7 @@ export default function Home() {
         <Header />
         <Scene1 />
         <Phrase />
+        <Experience />
         <ZoomParallax />
         {/* <Scene2 /> */}
 

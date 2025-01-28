@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Rounded from '../common/RoundedBottom/Index';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
-import Magnetic from '../common/Magnetic/Index';
+import Magnetic from '../common/Magnetic/index';
 
 //Contacts section
 export default function Index() {

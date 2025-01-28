@@ -115,7 +115,7 @@ export default function Index() {
       }
     </div>
     <Rounded>
-      <p><a href='https://github.com/Merns999' target='_blank'>More work</a></p>
+      <p><a href='https://github.com/MansurAkidah' target='_blank'>More work</a></p>
     </Rounded>
     <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
@@ -131,7 +131,7 @@ export default function Index() {
                     alt="image"
                     /> */}
                     <a 
-                    href={link}
+                    href='https://github.com/MansurAkidah'
                     target="_blank"
                     rel="noopener noreferrer" 
                     className={styles.modal} 
