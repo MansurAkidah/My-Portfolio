@@ -21,7 +21,7 @@ export default function Index() {
                 <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     <Rounded className={styles.button}>
-                        <p><a href='/mansur_resume.pdf' download={true}>About me</a></p>
+                        <p><a href='/docs/Mansur.pdf' >About me</a></p>
                     </Rounded>
                 </div>
             </div>
