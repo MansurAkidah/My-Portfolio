@@ -96,7 +96,7 @@ export default function Home() {
         <Header />
         <Scene1 />
         <Phrase />
-        <Experience />
+        {/* <Experience /> */}
         <ZoomParallax />
         {/* <Scene2 /> */}
 
