@@ -35,7 +35,7 @@ export default function Index() {
             const isMobile = window.matchMedia("(max-width: 768px)").matches;
             const updatedPictures = [
                 {
-                    src: isMobile ? Picture1 : Picture8,
+                    src: isMobile ? Picture2 : Picture8,
                     scale: scale4
                 },
                 {

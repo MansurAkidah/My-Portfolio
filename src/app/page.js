@@ -87,7 +87,6 @@ export default function Home() {
 
   return (
     <main onMouseMove={(e) => {manageMouseMove(e)}} className={styles.main}>
-      {/* <h4 className="text-[1.5vw] max-w-[100vw] text-center text-white top-0 z-10 pb-10">Scroll down </h4> */}
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -96,25 +95,36 @@ export default function Home() {
         <Header />
         <Scene1 />
         <Phrase />
-        {/* <Experience /> */}
         <ZoomParallax />
-        {/* <Scene2 /> */}
 
-      {
-        projectsHome.map( (project, i) => {
-          const targetScale = 1 - ( (projectsHome.length - i) * 0.05);
-          return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+        {
+        projectsHome.map((project, i) => {
+          // Reduced scaling factor from 0.05 to 0.02 for more subtle scaling
+          // This means each card will be 2% smaller than the next one
+          const targetScale = 1 - ((projectsHome.length - 1 - i) * 0.02);
+          
+          // Adjusted animation ranges to accommodate more cards
+          // Each card will start animating 15% after the previous one
+          const rangeStart = i * 0.15;
+          const rangeEnd = Math.min(1, rangeStart + 0.4); // Reduced range span to 0.4
+          
+          return (
+            <Card 
+              key={`project_${i}`}
+              i={i}
+              title={project.title}
+              description={project.description}
+              src={project.src}
+              link={project.link}
+              color={project.color}
+              progress={scrollYProgress}
+              range={[rangeStart, rangeEnd]}
+              targetScale={targetScale}
+            />
+          );
         })
       }
-      {/* <h3>We use design and technology to create brands and products that perform, delight, and scale.</h3> */}
-      {/* <div className={styles.gallery}>
-        <Double projects={[projects[0], projects[1]]}/>
-        <Double projects={[projects[2], projects[3]]} reversed={true}/>
-        <Double projects={[projects[4], projects[5]]}/>
-        <Double projects={[projects[6], projects[7]]} reversed={true}/>
-      </div> */}
-
-      {/* <Intro /> */}
+      
       <Footer />
         </>
       )}

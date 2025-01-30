@@ -9,7 +9,7 @@ export default function Scene1() {
     const [isActive, setIsActive] = useState(false);
     
     return (
-        <div className='min-h-screen flex flex-col lg:flex-row gap-8 lg:gap-0 pb-8 lg:pb-0'>
+        <div className='min-h-screen flex flex-col lg:flex-row gap-8 lg:gap-0 pb-8 lg:pb-0 mt-[-100px]'>
             {/* Left side content */}
             <div className='w-full lg:w-1/2 flex flex-col justify-center px-6 lg:pl-16 pt-12 lg:pt-0'>
                 <h1 
