@@ -6,7 +6,7 @@ export default function Content() {
         { content: "It all started with 'Hello World'" },
         { content: <p>Late nights debugging, fueled by coffee and curiosity</p> },
         { content: "First website: A mess of HTML and inline CSS" },
-        { content: <p>Learning JavaScript - The 'aha!' moments</p> },
+        { content: <p>Learning JavaScript - The &apos;aha!&apos; moments</p> },
         { content: "Discovering React changed everything" },
         { content: <p>Building projects, breaking things, learning fast</p> },
         { content: "Stack Overflow became my best friend" },
