@@ -7,24 +7,25 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import Rounded from '../common/RoundedBottom/index';
 
+
 const projects = [
   {
     title: "Meditation App",
-    src: "stone.png",
+    src: "medi.png",
     category:"Android",
     link:"www.example.com",
     color: "#000000"
   },
   {
     title: "Real Estate Web App",
-    src: "stone.png",
+    src: "real estate.png",
     category:"Web",
     link:"www.example.com",
     color: "#000000"
   },
   {
     title: "Fraud Detection System",
-    src: "stone1.png",
+    src: "Fraud.png",
     category:"Web",
     link:"www.example.com",
     color: "#8C8C8C"
@@ -38,21 +39,21 @@ const projects = [
   },
   {
     title: "Sacco System",
-    src: "stone2.png",
+    src: "sacco.png",
     category:"Web",
     link:"www.example.com",
     color: "#EFE8D3"
   },
   {
     title: "QR Code Generator App",
-    src: "stone4.png",
+    src: "gearhut.png",
     category:"Android",
     link:"www.example.com",
     color: "#706D63"
   },
   {
     title: "POS System",
-    src: "pos.png",
+    src: "pos stats.png",
     category:"Web",
     link:"www.example.com",
     color: "#EFE8D3"
@@ -124,12 +125,6 @@ export default function Index() {
                 projects.map( (project, index) => {
                 const { src, color, link  } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
-                    {/* <Image 
-                    src={`/images/${src}`}
-                    width={300}
-                    height={0}
-                    alt="image"
-                    /> */}
                     <a 
                     href='https://github.com/MansurAkidah'
                     target="_blank"
@@ -150,21 +145,7 @@ export default function Index() {
             }
             </div>
         </motion.div>
-        <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>
-        <a 
-          ref={cursorLabel}
-          href={projects[index]?.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.cursorLabel} 
-          variants={scaleAnimation} 
-          initial="initial" 
-          animate={active ? "enter" : "closed"}
-        >
-          View
-        </a>
-        </motion.div>
+        
     </>
   </main>
   )

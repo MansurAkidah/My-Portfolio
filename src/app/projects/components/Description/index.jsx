@@ -5,7 +5,7 @@ import { slideUp, opacity } from './animation';
 import Rounded from '../common/RoundedBottom/index';
 export default function Index() {
 
-    const phrase = "One line at a time, one bug at a time, one error at a time. With the various hours dedicated, these projects saw the day of light.";
+    const phrase = "Line by line, bug by bug. Through dedication, these projects came to life.";
     const description = useRef(null);
     const isInView = useInView(description)
     return (
@@ -18,7 +18,7 @@ export default function Index() {
                     })
                 }
                 </p>
-                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</motion.p>
+                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>Where design meets code, I create digital experiences that leave an impact.</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     <Rounded className={styles.button}>
                         <p><a href='/docs/Mansur.pdf' >About me</a></p>

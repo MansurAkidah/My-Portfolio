@@ -3,21 +3,36 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px;
     border-top: 1px solid rgb(201, 201, 201);
     cursor: pointer;
     transition: all 0.2s;
 
+    @media (max-width: 768px) {
+        padding: 30px 30px;
+    }
+
+
     h2{
-        font-size: 60px;
+        font-size: 30px;
         margin: 0px;
         font-weight: 400;
         transition: all 0.4s;
+        margin-right: auto;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 
     p{
         transition: all 0.4s;
         font-weight: 300;
+        margin-right: 50px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     &:last-of-type{
@@ -29,10 +44,18 @@
 
         h2{
             transform: translateX(-10px);
+
+            @media (max-width: 768px) {
+                transform: translateX(-5px);
+            }
         }
 
         p{
             transform: translateX(10px);
+
+            @media (max-width: 768px) {
+                transform: translateX(5px);
+            }
         }
     }
 }

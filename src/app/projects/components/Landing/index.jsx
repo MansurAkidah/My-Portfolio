@@ -6,6 +6,20 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
+import LogoWall from './LogoWall';
+import reactbits from '../../../../../public/images/react.svg';
+
+const logoImgs = [
+    { imgUrl: "/images/node-js.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/react.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/python.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/github.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/java.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/javascript.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/c-sharp-96.svg", altText: "React Bits Logo" },
+    { imgUrl: "/images/figma.svg", altText: "React Bits Logo" },
+
+  ];
 
 export default function Index() {
     const firstText = useRef(null);
@@ -45,22 +59,32 @@ export default function Index() {
     return (
         <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
             <Image 
-                src="/images/Screenshot (238).png"
+                src="/images/home2.png"
                 fill={true}
                 alt="background"
             />
-            <div className={styles.sliderContainer}>
+            {/* <div className={styles.sliderContainer}>
                 <div ref={slider} className={styles.slider}>
                     <p ref={firstText}>Designer & Developer</p>
-                    {/* <p ref={secondText}> FullStack Development -</p> */}
                 </div>
+            </div> */}
+            <div className={styles.sliderContainer}>
+                <LogoWall
+                    items={logoImgs}
+                    direction='horizontal'
+                    pauseOnHover={true}
+                    size='clamp(8rem, 1rem + 20vmin, 25rem)'
+                    duration='60s'
+                    bgColor='transparent'
+                    bgAccentColor='transparent'
+                />  
             </div>
             <div data-scroll data-scroll-speed={0.1} className={styles.description}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-braces" viewBox="0 0 16 16">
-                    <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-code-slash" viewBox="0 0 16 16">
+                    <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
                 </svg>
-                <p>Freelance</p>
-                <p>Designer & Full-Stack Developer</p>
+                <p>Featured Projects</p>
+                <p>A Collection of My Best Work</p>
             </div>
         </motion.main>
     )
