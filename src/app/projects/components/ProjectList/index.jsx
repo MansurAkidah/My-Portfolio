@@ -6,6 +6,10 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Rounded from '../common/RoundedBottom/index';
+import { useProjectStore } from "./utils/store";
+// import { ProjectGrid } from "../ProjectList/components/project/ProjectGrid";
+// import { ProjectDetails } from "./components/project/ProjectDetails/index";
+import { Projects } from "./utils/types";
 
 
 const projects = [
@@ -74,6 +78,10 @@ export default function Index() {
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
 
+  const projects = useProjectStore((state) => state.projects);
+  const [selectedProject, setSelectedProject] = useState<Projects | null>(null);
+
+
   let xMoveContainer = useRef(null);
   let yMoveContainer = useRef(null);
   let xMoveCursor = useRef(null);
@@ -123,29 +131,40 @@ export default function Index() {
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
             {
                 projects.map( (project, index) => {
-                const { src, color, link  } = project
-                return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
-                    <a 
-                    href='https://github.com/MansurAkidah'
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className={styles.modal} 
-                    style={{backgroundColor: color}} 
-                    key={`modal_${index}`}
-                  >
-                    <Image
-                      src={`/images/Projects/${src}`}
-                      width={500}
-                      height={0}
-                      alt="image"
-                    />
-                  </a>
-                </div>
+                  const { src, color, link  } = project
+                  return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
+                      <a 
+                      href='https://github.com/MansurAkidah'
+                      target="_blank"
+                      rel="noopener noreferrer" 
+                      className={styles.modal} 
+                      style={{backgroundColor: color}} 
+                      key={`modal_${index}`}
+                    >
+                      <Image
+                        src={`/images/Projects/${src}`}
+                        width={500}
+                        height={0}
+                        alt="image"
+                      />
+                    </a>
+                  </div>
                 })
             }
             </div>
         </motion.div>
-        
+        {/* <ProjectGrid
+            projects={projects}
+            onProjectClick={setSelectedProject}
+          />
+
+        {selectedProject && (
+          <ProjectDetails
+            project={selectedProject}
+            isOpen={!!selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )} */}
     </>
   </main>
   )

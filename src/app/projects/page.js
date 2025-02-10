@@ -6,6 +6,11 @@ import { AnimatePresence } from 'framer-motion';
 import Landing from '../projects/components/Landing/index';
 import Description from '../projects/components/Description/index';
 import Projects from '../projects/components/ProjectList/index';
+
+import { ProjectGrid } from "./components/ProjectList/ProjectGrid";
+import { ProjectDetails } from "./components/ProjectList/ProjectDetails";
+
+
 // import Contact from '../projects/components/Contacts/index';
 // import SlidingImages from '../components/SlidingImages';
 import Header from "@/components/Header"
