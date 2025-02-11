@@ -9,7 +9,7 @@ import Rounded from '../common/RoundedBottom/index';
 import { useProjectStore } from "./utils/store";
 // import { ProjectGrid } from "../ProjectList/components/project/ProjectGrid";
 // import { ProjectDetails } from "./components/project/ProjectDetails/index";
-import { Projects } from "./utils/types";
+// import { Projects } from "./utils/types";
 
 
 const projects = [
@@ -79,7 +79,7 @@ export default function Index() {
   const cursorLabel = useRef(null);
 
   const projects = useProjectStore((state) => state.projects);
-  const [selectedProject, setSelectedProject] = useState<Projects | null>(null);
+  // const [selectedProject, setSelectedProject] = useState<Projects | null>(null);
 
 
   let xMoveContainer = useRef(null);
