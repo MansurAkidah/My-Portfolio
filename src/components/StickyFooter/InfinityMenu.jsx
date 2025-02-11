@@ -925,7 +925,6 @@ export default function InfiniteMenu({ items = [] }) {
         ref={canvasRef}
       />
 
-      {/* Feel free to customize what's displayed when the menu is not being dragged and an item is displayed in the center */}
       {activeItem && (
         <>
           <h2 className={`face-title ${isMoving ? 'inactive' : 'active'}`}>

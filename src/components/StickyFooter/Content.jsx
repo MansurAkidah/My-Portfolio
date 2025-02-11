@@ -5,7 +5,7 @@ import InfiniteMenu from './InfinityMenu'
 export default function Content() {
     const items = [
         {
-            image: 'https://picsum.photos/300/300?grayscale',
+            image: 'https://cdn.shopify.com/s/files/1/0070/7032/articles/Header_4bf3c320-7c35-478b-8159-5f5d360f9d92.png?v=1729897444&originalWidth=1848&originalHeight=782&width=1800',
             link: 'https://g-hut-eight.vercel.app/',
             title: 'GearHut (2023)',
             description: 'E-Commerce platform for a Nairobi-based retail accessory shop.'
