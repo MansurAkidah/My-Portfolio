@@ -5,7 +5,7 @@ import { MessageCircle, X } from 'lucide-react';
 
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  //const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
@@ -28,29 +28,11 @@ export function ChatWidget() {
         </div>
       ) : (
         <div className="relative">
-          {isHovered && (
-            <div className="absolute bottom-16 right-0 bg-blue-500 text-black p-3 rounded-lg shadow-lg max-w-[200px] mb-2">
-              <div className="flex items-center gap-2">
-                <span>Hi</span>
-                <span className="text-xl">👋</span>
-                <div className="w-8 h-8 rounded-full bg-white overflow-hidden ml-1">
-                  <img 
-                    src="/images/mans.jpg" 
-                    alt="Zuri avatar"
-                    className="w-full h-full object-cover"
-                  />
-
-                </div>
-              </div>
-              <p className="mt-1">What would you like to know about me?</p>
-              {/* Triangle pointer at bottom */}
-              <div className="absolute -bottom-2 right-6 w-4 h-4 bg-blue-500 transform rotate-45"></div>
-            </div>
-          )}
+          
           <button
             onClick={() => setIsOpen(true)}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            // onMouseEnter={() => setIsHovered(true)}
+            // onMouseLeave={() => setIsHovered(false)}
             className="bg-blue-500 hover:bg-blue-600 text-white p-1 rounded-full shadow-lg flex items-center justify-center transition-colors"
             aria-label="Open chat"
           >
