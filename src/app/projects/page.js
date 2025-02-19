@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import Landing from '../projects/components/Landing/index';
 import Description from '../projects/components/Description/index';
 import Projects from '../projects/components/ProjectList/index';
-
+import BackgroundBeamsDemo from './components/Footer/Index';
 // import { ProjectGrid } from "./components/ProjectList/ProjectGrid";
 // import { ProjectDetails } from "./components/ProjectList/ProjectDetails";
 
@@ -42,7 +42,8 @@ export default function Index() {
       <Header />
       <Landing />
       <Description />
-      <Projects />
+      <BackgroundBeamsDemo />
+      {/* <Projects /> */}
       {/* <SlidingImages />*/}
       {/* <Contact />  */}
     </main>

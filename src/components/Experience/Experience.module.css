@@ -1,59 +1,59 @@
 .experienceSection {
-    padding: 4rem 2rem;
-    background-color: #000;
-    color: #f9f9f9;
-  }
-  
-  .sectionTitle {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    font-weight: 600;
-    color: #222;
-  }
-  
-  .experienceList {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .experienceItem {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .experienceItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .experienceTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #444;
-  }
-  
-  .experienceCompany {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-  }
-  
-  .experienceDuration {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 1rem;
-  }
-  
-  .experienceDescription {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-  }
+  padding: 4rem 2rem;
+  background-color: #000;
+  color: #f9f9f9;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experienceItem {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experienceTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.experienceCompany {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.experienceDuration {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.experienceDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}

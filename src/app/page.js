@@ -10,7 +10,6 @@ import Intro from "@/components/StickyFooter/Intro";
 import Header from "@/components/Header"
 import Lenis from '@studio-freight/lenis'
 import Image from 'next/image';
-import Double from '../components/double';
 import Scene1 from '@/components/Cursor/Scene1';
 import Scene2 from '@/components/Cursor/Scene2';
 import Preloader from '../components/Preloader';
@@ -18,6 +17,9 @@ import gsap from 'gsap';
 import Card from '@/components/Card/index';
 import Phrase from '@/components/About/phrase';
 import Experience from '@/components/Experience/experience';
+import Testimonials from '@/components/Testimonials/testimonials'
+import Timeline from '@/components/Experience/timeline';
+import BackgroundLinesDemo from '../components/Testimonials/background-lines';
 
 export default function Home() {
 
@@ -92,40 +94,37 @@ export default function Home() {
       </AnimatePresence>
       {!isLoading && (
         <>
-        <Header />
-        <Scene1 />
-        <Phrase />
-        <ZoomParallax />
+          <Header />
+          <Scene1 />
+          <Phrase />
+          <Timeline />
+          <ZoomParallax />
 
-        {
-        projectsHome.map((project, i) => {
-          // Reduced scaling factor from 0.05 to 0.02 for more subtle scaling
-          // This means each card will be 2% smaller than the next one
-          const targetScale = 1 - ((projectsHome.length - 1 - i) * 0.02);
-          
-          // Adjusted animation ranges to accommodate more cards
-          // Each card will start animating 15% after the previous one
-          const rangeStart = i * 0.15;
-          const rangeEnd = Math.min(1, rangeStart + 0.4); // Reduced range span to 0.4
-          
-          return (
-            <Card 
-              key={`project_${i}`}
-              i={i}
-              title={project.title}
-              description={project.description}
-              src={project.src}
-              link={project.link}
-              color={project.color}
-              progress={scrollYProgress}
-              range={[rangeStart, rangeEnd]}
-              targetScale={targetScale}
-            />
-          );
-        })
-      }
-      
-      <Footer />
+          {
+            projectsHome.map((project, i) => {
+              const targetScale = 1 - ((projectsHome.length - 1 - i) * 0.02);
+              const rangeStart = i * 0.15;
+              const rangeEnd = Math.min(1, rangeStart + 0.4);
+              
+              return (
+                <Card 
+                  key={`project_${i}`}
+                  i={i}
+                  title={project.title}
+                  description={project.description}
+                  src={project.src}
+                  link={project.link}
+                  color={project.color}
+                  progress={scrollYProgress}
+                  range={[rangeStart, rangeEnd]}
+                  targetScale={targetScale}
+                />
+              );
+            })
+          }
+          <BackgroundLinesDemo />
+          <Testimonials />
+          <Footer />
         </>
       )}
       
