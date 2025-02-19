@@ -1,6 +1,5 @@
 'use client'
 import styles from './page.module.scss'
-import { projects, projectsHome  } from '@/data';
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { AnimatePresence, useScroll  } from 'framer-motion';
@@ -14,12 +13,9 @@ import Scene1 from '@/components/Cursor/Scene1';
 import Scene2 from '@/components/Cursor/Scene2';
 import Preloader from '../components/Preloader';
 import gsap from 'gsap';
-import Card from '@/components/Card/index';
 import Phrase from '@/components/About/phrase';
-import Experience from '@/components/Experience/experience';
 import Testimonials from '@/components/Testimonials/testimonials'
-import Timeline from '@/components/Experience/timeline';
-import BackgroundLinesDemo from '../components/Testimonials/background-lines';
+import TimeLine from '@/components/TimeLine/TimeLineDemo';
 
 export default function Home() {
 
@@ -32,12 +28,7 @@ export default function Home() {
   const easing = 0.08;
   const speed = 0.01;
 
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ['start start', 'end end']
-  })
-
+ 
   const manageMouseMove = (e) => {
     const { movementX, movementY } = e
     xForce += movementX * speed;
@@ -97,33 +88,13 @@ export default function Home() {
           <Header />
           <Scene1 />
           <Phrase />
-          <Timeline />
+          <TimeLine />
+          <Testimonials />
           <ZoomParallax />
 
-          {
-            projectsHome.map((project, i) => {
-              const targetScale = 1 - ((projectsHome.length - 1 - i) * 0.02);
-              const rangeStart = i * 0.15;
-              const rangeEnd = Math.min(1, rangeStart + 0.4);
-              
-              return (
-                <Card 
-                  key={`project_${i}`}
-                  i={i}
-                  title={project.title}
-                  description={project.description}
-                  src={project.src}
-                  link={project.link}
-                  color={project.color}
-                  progress={scrollYProgress}
-                  range={[rangeStart, rangeEnd]}
-                  targetScale={targetScale}
-                />
-              );
-            })
-          }
-          <BackgroundLinesDemo />
-          <Testimonials />
+          
+          {/* <BackgroundLinesDemo /> */}
+          {/* <Testimonials /> */}
           <Footer />
         </>
       )}
