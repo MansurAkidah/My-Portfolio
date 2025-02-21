@@ -5,17 +5,16 @@ import { useRef } from 'react';
 import { AnimatePresence, useScroll  } from 'framer-motion';
 import ZoomParallax from '../components/ZoomParallax/index';
 import Footer from "@/components/StickyFooter/Footer1";
-import Intro from "@/components/StickyFooter/Intro";
 import Header from "@/components/Header"
 import Lenis from '@studio-freight/lenis'
-import Image from 'next/image';
 import Scene1 from '@/components/Cursor/Scene1';
-import Scene2 from '@/components/Cursor/Scene2';
 import Preloader from '../components/Preloader';
+import Scene2 from '@/components/Cursor/Scene2';
 import gsap from 'gsap';
 import Phrase from '@/components/About/phrase';
 import Testimonials from '@/components/Testimonials/testimonials'
 import TimeLine from '@/components/TimeLine/TimeLineDemo';
+import Carousel from '@/components/Projects/Components/Carousel/content';
 
 export default function Home() {
 
@@ -89,8 +88,10 @@ export default function Home() {
           <Scene1 />
           <Phrase />
           <TimeLine />
+          <Carousel />
+          <Scene2 />
           <Testimonials />
-          <ZoomParallax />
+          {/* <ZoomParallax /> */}
 
           
           {/* <BackgroundLinesDemo /> */}
