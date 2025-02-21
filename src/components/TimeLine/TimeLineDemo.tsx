@@ -8,12 +8,12 @@ export default function TimelineDemo() {
         title: "2025 (Expected Graduation)",
         content: (
           <div>
-            <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
               Expected to graduate with a Bachelor&apos;s degree in Information Technology from JKUAT.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="https://images.unsplash.com/photo-1573497491208-6b1acb260507"
+                src="/images/grad.png"
                 alt="Graduation"
                 width={500}
                 height={500}
@@ -27,7 +27,7 @@ export default function TimelineDemo() {
         title: "August 2024 - Present",
         content: (
           <div>
-            <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
               Working as a Full-Time Software Engineer, leading full-stack development using ASP.NET and Knockout.js.
             </p>
             <div className="grid grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ export default function TimelineDemo() {
         title: "Jan 2024 - May 2024",
         content: (
           <div>
-            <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
               Interning as a junior software developer developing full-stack applications using .NET frameworks, including Xamarin and C# for a startup.
             </p>
             <div className="grid grid-cols-2 gap-4">
@@ -65,7 +65,7 @@ export default function TimelineDemo() {
         title: "Personal Projects",
         content: (
           <div>
-            <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
               Developed various projects including a fraud detection system using Machine Learning, a meditation Android app, a QR code generator, e-commerce websites and POS systems.
             </p>
             <div className="grid grid-cols-3 gap-4">

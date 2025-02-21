@@ -68,27 +68,14 @@ const data = [
       <DummyContent
         title="GearHut - Your Ultimate Shopping Hub"
         description="An e-commerce platform offering the latest tech gadgets and accessories."
-        imageSrc="/images/projects/new-gear.jpg"
+        imageSrc="/images/Projects/new-gear.jpg"
       />
     ),
   },
-  {
-    category: "Web-App",
-    title: "RealEstate Management System.",
-    src: "/images/projects/realestate.png",
-    content: (
-      <DummyContent
-        title="RealEstate Management"
-        description="A web app designed to manage real estate listings, tenants, and transactions seamlessly."
-        imageSrc="/images/projects/realestate.png"
-      />
-    ),
-  },
-
   {
     category: "React App",
     title: "POS System.",
-    src: "/images/projects/pos stats.png",
+    src: "/images/Projects/pos stats.png",
     content: (
       <DummyContent
         title="POS System"
@@ -97,28 +84,30 @@ const data = [
       />
     ),
   },
+  
   {
     category: "Web-App",
     title: "Fraud Detection System using ML.",
-    src: "/images/projects/face.jpg",
+    src: "/images/Projects/face.jpg",
     content:  (
       <DummyContent
-        title="AI-Powered Fraud Detection"
-        description="An ML-driven system for detecting and preventing fraudulent transactions in real time."
-        imageSrc="/images/projects/face.jpg"
+      title="AI-Powered Fraud Detection"
+      description="An ML-driven system for detecting and preventing fraudulent transactions in real time."
+      imageSrc="/images/projects/face.jpg"
       />
     ),
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content:  (
+    category: "Web-App",
+    title: "RealEstate Management System.",
+    src: "/images/Projects/realestate.png",
+    content: (
       <DummyContent
-        title="Join Our Team!"
-        description="We are looking for a skilled Staff Software Engineer to join our fast-growing company."
-        imageSrc="https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="RealEstate Management"
+        description="A web app designed to manage real estate listings, tenants, and transactions seamlessly."
+        imageSrc="/images/Projects/realestate.png"
       />
     ),
   },
+  
 ];
