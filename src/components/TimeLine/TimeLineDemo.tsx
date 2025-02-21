@@ -9,7 +9,7 @@ export default function TimelineDemo() {
         content: (
           <div>
             <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-              Expected to graduate with a Bachelor's degree in Information Technology from JKUAT.
+              Expected to graduate with a Bachelor&apos;s degree in Information Technology from JKUAT.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image

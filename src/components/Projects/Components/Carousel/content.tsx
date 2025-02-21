@@ -26,7 +26,7 @@ interface DummyContentProps {
 const DummyContent: React.FC<DummyContentProps> = ({ title, description, imageSrc }) => {
   return (
     <>
-      {[...new Array(1).fill(1)].map((_, index) => {
+      {[...new Array(1).fill(1)].map((key, index) => {
         return (
           <div className="bg-neutral-800 dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4" >
             <p className="text-neutral-300 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
