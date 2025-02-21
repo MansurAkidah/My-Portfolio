@@ -63,12 +63,12 @@ const data = [
   {
     category: "E Commerce",
     title: "GearHut.",
-    src: "/images/projects/new-gear.jpg",
+    src: "/images/projects/newgear.jpg",
     content: (
       <DummyContent
         title="GearHut - Your Ultimate Shopping Hub"
         description="An e-commerce platform offering the latest tech gadgets and accessories."
-        imageSrc="/images/Projects/new-gear.jpg"
+        imageSrc="/images/Projects/newgear.jpg"
       />
     ),
   },
