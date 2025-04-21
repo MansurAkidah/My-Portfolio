@@ -84,7 +84,18 @@ const data = [
       />
     ),
   },
-  
+  {
+    category: "Web-App",
+    title: "Cakes and Pastries website.",
+    src: "/images/Projects/face.jpg",
+    content:  (
+      <DummyContent
+      title="RummyYummy Cakes and Pastries"
+      description="A site to showcase and make orders on cakes and Pastries for a talented Baker."
+      imageSrc="/images/projects/face.jpg"
+      />
+    ),
+  },
   {
     category: "Web-App",
     title: "Fraud Detection System using ML.",
