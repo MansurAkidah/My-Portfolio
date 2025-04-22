@@ -80,7 +80,7 @@ const data = [
       <DummyContent
         title="POS System"
         description="A React-based Point-of-Sale system for efficient store management and transactions."
-        imageSrc="/images/projects/pos stats.png"
+        imageSrc="/images/Projects/pos stats.png"
       />
     ),
   },
@@ -93,7 +93,7 @@ const data = [
       <DummyContent
       title="AI-Powered Fraud Detection"
       description="An ML-driven system for detecting and preventing fraudulent transactions in real time."
-      imageSrc="/images/projects/face.jpg"
+      imageSrc="/images/Projects/face.jpg"
       />
     ),
   },
