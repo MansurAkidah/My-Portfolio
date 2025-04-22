@@ -47,11 +47,14 @@ const DummyContent: React.FC<DummyContentProps> = ({ title, description, imageSr
   );
 };
 
+
+
 const data = [
-  {
+    {
     category: "Android App",
     title: "Meditation app with soothing music.",
     src: "/images/medi app.jpg",
+    link: "https://example.com/meditation-app",
     content:  (
       <DummyContent
         title="Meditation & Relaxation"
@@ -64,11 +67,12 @@ const data = [
     category: "E Commerce",
     title: "GearHut.",
     src: "/images/Projects/newgear.jpg",
+    link: "https://example.com/gearhut",
     content: (
       <DummyContent
         title="GearHut - Your Ultimate Shopping Hub"
         description="An e-commerce platform offering the latest tech gadgets and accessories."
-        imageSrc="/images/Projects/newgear.jpg"
+        imageSrc="/images/Projects/gearhut2.png"
       />
     ),
   },
@@ -76,6 +80,7 @@ const data = [
     category: "React App",
     title: "POS System.",
     src: "/images/Projects/pos stats.png",
+    link: "https://example.com/pos-system",
     content: (
       <DummyContent
         title="POS System"
@@ -87,12 +92,13 @@ const data = [
   {
     category: "Web-App",
     title: "Cakes and Pastries website.",
-    src: "/images/Projects/face.jpg",
+    src: "/images/Projects/rummy.jpg",
+    link: "https://example.com/rummyyummy",
     content:  (
       <DummyContent
       title="RummyYummy Cakes and Pastries"
       description="A site to showcase and make orders on cakes and Pastries for a talented Baker."
-      imageSrc="/images/projects/face.jpg"
+      imageSrc="/images/projects/rummyyummy.png"
       />
     ),
   },
@@ -100,6 +106,7 @@ const data = [
     category: "Web-App",
     title: "Fraud Detection System using ML.",
     src: "/images/Projects/face.jpg",
+    link: "https://example.com/fraud-detection",
     content:  (
       <DummyContent
       title="AI-Powered Fraud Detection"
@@ -112,6 +119,7 @@ const data = [
     category: "Web-App",
     title: "RealEstate Management System.",
     src: "/images/Projects/realestate.png",
+    link: "https://example.com/realestate",
     content: (
       <DummyContent
         title="RealEstate Management"

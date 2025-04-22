@@ -10,6 +10,7 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
+  links:string[];
 };
 export const AnimatedTestimonials = ({
   testimonials,
@@ -63,7 +64,7 @@ export const AnimatedTestimonials = ({
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : randomRotateY(),
                     zIndex: isActive(index)
-                      ? 999
+                      ? 99
                       : testimonials.length + 2 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
@@ -143,6 +144,23 @@ export const AnimatedTestimonials = ({
                 </motion.span>
               ))}
             </motion.p>
+            {testimonials[active].links && testimonials[active].links.length > 0 && (
+              <div className="flex mt-4">
+                {testimonials[active].links.map((link, index) => (
+                  <a 
+                    key={index} 
+                    href={link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="mr-3 text-gray-400 hover:text-gray-300 transition-colors"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            )}
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button

@@ -7,35 +7,48 @@ export default function AnimatedTestimonialsDemo() {
         "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
       name: "Kevin Mugo",
       designation: "Product Manager at Leizam",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "https://img.freepik.com/premium-photo/portrait-stoic-marcus-aurelius-black-white-film-grain-highly-detailed-masterpiece_1097265-29426.jpg",
+      links: ["https://www.linkedin.com/in/kelvin-mugo-08441676/?originalSubdomain=ke"]
+    },
+    {
+      quote:
+      "He is a front end wizard",
+      name: "AbdulRahman Kuski",
+      designation: "Backend Developer",
+      src: "/images/machiavelli.png",
+      links: ["https://github.com/kuski-jabir"]
     },
     {
       quote:
       "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
       name: "Victor",
       designation: "Senior Backend Developer",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/marcus.png",
+      links: ["https://github.com/vicky642"]
     },
     {
       quote:
       "His solutions have significantly improved his team's productivity. The intuitive interface makes complex tasks simple.",
       name: "Dr.Dennis Njagi",
       designation: "Professor at JKUAT",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/socrates1.png",
+      links: ["https://jkuat.ac.ke/staff/dennis-njagi", "https://researchgate.net/profile/dennis-njagi"]
     },
     {
       quote:
       "His contribution to the designs in my projects are always on point, he has a keen eye to detail.",
       name: "Abigail Kapten",
       designation: "Student Rep Jkuat",
-      src: "/images/pic.png",
+      src: "/images/aphrodites1.png",
+      links: ["https://linkedin.com/in/abigail-kapten-b774771b8", "https://www.instagram.com/kapt_abby_/"]
     },
     {
       quote:
       "His skills in both frontend and backend are something to admire.",
       name: "Ivy Manegene",
       designation: "Fellow alumni at JKUAT",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/athena1.png",
+      links: ["https://linkedin.com/in/ivy-manegene-809a2b171"]
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

@@ -18,8 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ed276a130292813.617cbe23df1ee.png" sizes="any" />
-        <link rel="icon" type="image/png" href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ed276a130292813.617cbe23df1ee.png" />
+        <link rel="icon" href="images/Mans.jpg" sizes="any" />
+        <link rel="icon" type="image/png" href="images/Mans.jpg" />
+        
       </head>
       <body className={inter.className}>
         {children}
