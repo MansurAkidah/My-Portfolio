@@ -40,14 +40,6 @@ const Card = ({i, title, description, src, url, color, progress, range, targetSc
               className={styles.inner}
               style={{scale: imageScale}}
             >
-                {/* <video
-                  controls
-                  className={styles.video}
-                  style={{ width: '100%', height: '100%' }}
-                >
-                  <source src={`/images/videos/gods wrath2.mp4`} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
                 <Image
                   fill
                   src={`/images/${src}`}

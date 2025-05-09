@@ -34,7 +34,7 @@ const links = [
   },
   {
     title: "Resume",
-    href: "/mansur_resume.pdf",
+    href: "/docs/Mansur Akidah - App Software Engineer.pdf",
     src: "home3.png",
     download: true
   }
