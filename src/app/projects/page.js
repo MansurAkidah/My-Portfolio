@@ -14,7 +14,7 @@ import Card from '@/components/Card/index';
 // import { ProjectDetails } from "./components/ProjectList/ProjectDetails";
 
 
-// import Contact from '../projects/components/Contacts/index';
+import Contact from '../projects/components/Contacts/index';
 // import SlidingImages from '../components/SlidingImages';
 import Header from "@/components/Header"
 
@@ -73,10 +73,10 @@ export default function Index() {
               );
             })
           }
-      <BackgroundBeamsDemo />
+      {/* <BackgroundBeamsDemo /> */}
       {/* <Projects /> */}
       {/* <SlidingImages />*/}
-      {/* <Contact />  */}
+      <Contact /> 
     </main>
   )
 }

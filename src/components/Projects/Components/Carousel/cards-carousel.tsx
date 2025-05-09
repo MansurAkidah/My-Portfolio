@@ -15,6 +15,7 @@ type Card = {
   src: string;
   title: string;
   category: string;
+  link:string;
   content: React.ReactNode;
 };
 
@@ -190,7 +191,7 @@ export const Card = ({ card, index, layout = false, }: { card: Card; index: numb
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
+              className="bg-black/10 backdrop-blur-lg h-full w-full fixed inset-0"
             />
             <motion.div
               initial={{ opacity: 0 }}
@@ -212,13 +213,44 @@ export const Card = ({ card, index, layout = false, }: { card: Card; index: numb
               >
                 {card.category}
               </motion.p>
-              <motion.p
+              <motion.div
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-800 mt-4 dark:text-white"
+                className="flex items-center gap-2 mt-4"
               >
-                {card.title}
-              </motion.p>
+                <a 
+                  href={card.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                >
+                  <motion.p className="text-2xl md:text-5xl font-semibold text-neutral-800 dark:text-white">
+                    {card.title}
+                  </motion.p>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-5 w-5 md:h-6 md:w-6 text-neutral-800 dark:text-white" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" 
+                    />
+                  </svg>
+                </a>
+              </motion.div>
               <div className="py-10">{card.content}</div>
+              {/* <video
+                  controls
+                  
+                  style={{ width: '100%', height: '100%' }}
+                >
+                  <source src={`/images/videos/gods wrath2.mp4`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>  */}
             </motion.div>
           </div>
         )}
@@ -280,5 +312,7 @@ export const BlurImage = ({
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />
+    
+                 
   );
 };

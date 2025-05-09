@@ -15,15 +15,15 @@ const links = [
     download: false
   },
   {
-    title: "About Me",
-    href: "/about",
-    src: "black suit.jpg",
-    download: false
-  },
-  {
     title: "Projects",
     href: "/projects",
     src: "logo 1.png",
+    download: false
+  },
+  {
+    title: "What I Do",
+    href: "/services",
+    src: "black suit.jpg",
     download: false
   },
   {

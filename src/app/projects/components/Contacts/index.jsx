@@ -1,9 +1,10 @@
 import styles from './style.module.scss';
 import Image from 'next/image';
-import Rounded from '../common/RoundedBottom/Index';
+import Rounded from '../common/RoundedBottom/index';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../common/Magnetic/index';
+import { BackgroundBeams } from "./../Footer/background-beams";
 
 //Contacts section
 export default function Index() {
@@ -59,18 +60,19 @@ export default function Index() {
                         <span>
                             <h3>socials</h3>
                             <Magnetic>
-                                <p><a href='#' target='_blank'>Twitter</a></p>
+                                <p><a href='https://www.linkedin.com/in/mansurakidah' target='_blank'>Linkedin</a></p>
                             </Magnetic>
                         </span>
+                        <Magnetic>
+                            <p><a href='#' target='_blank'>Twitter</a></p>
+                        </Magnetic>
                         <Magnetic>
                             <p><a href='https://www.instagram.com/mern.s.u.r/' target='_blank'>Instagram</a></p>
                         </Magnetic>
                         <Magnetic>
                             <p><a href='#' target='_blank'></a>Dribbble</p>
                         </Magnetic>
-                        <Magnetic>
-                            <p><a href='https://www.linkedin.com/in/mansurakidah' target='_blank'>Linkedin</a></p>
-                        </Magnetic>
+                        
                     </div>
                 </div>
             </div>

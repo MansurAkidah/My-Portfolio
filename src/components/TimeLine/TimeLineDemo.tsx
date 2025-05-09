@@ -28,11 +28,11 @@ export default function TimelineDemo() {
         content: (
           <div>
             <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
-              Working as a Full-Time Software Engineer, leading full-stack development using ASP.NET and Knockout.js.
+              Working as a Software Developer, doing full-stack web development using ASP.NET and Knockout.js.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+                src="/images/Projects/programming background removed.png"
                 alt="Software Development"
                 width={500}
                 height={500}
@@ -66,7 +66,7 @@ export default function TimelineDemo() {
         content: (
           <div>
             <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
-              Developed various projects including a fraud detection system using Machine Learning, a meditation Android app, a QR code generator, e-commerce websites and POS systems.
+              Developed various projects including a Fraud Detection System (FDS) using Machine Learning, an android Meditation app, a QR Code generator, E-Commerce websites and POS systems.
             </p>
             <div className="grid grid-cols-3 gap-4">
               <Image src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="E-Commerce Project" width={500} height={500} className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow" />

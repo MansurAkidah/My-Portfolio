@@ -20,7 +20,7 @@ export default function Footer() {
                     variants={translate} initial="initial" 
                     animate="enter" 
                     exit="exit">
-                    <span>Typography:</span> Google Fonts
+                    <span>Profession:</span> Software Developer
                 </motion.li>
             </ul>
             <ul>
@@ -29,24 +29,11 @@ export default function Footer() {
                     variants={translate} initial="initial" 
                     animate="enter" 
                     exit="exit">
-                    <span>Images:</span> Freepik, Envato
+                    <span></span> 
                 </motion.li>
             </ul>
             <ul>
-                <motion.li
-                    custom={[0.3, 0]} 
-                    variants={translate} initial="initial" 
-                    animate="enter" 
-                    exit="exit">
-                    Privacy Policy
-                </motion.li>
-                <motion.li 
-                    custom={[0.3, 0]} 
-                    variants={translate} initial="initial" 
-                    animate="enter" 
-                    exit="exit">
-                    Terms & Conditions
-                </motion.li>
+                
             </ul>
         </div>
     )

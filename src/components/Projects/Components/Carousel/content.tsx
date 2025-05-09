@@ -54,7 +54,7 @@ const data = [
     category: "Android App",
     title: "Meditation app with soothing music.",
     src: "/images/medi app.jpg",
-    link: "https://example.com/meditation-app",
+    link: "https://github.com/MansurAkidah/MediApp",
     content:  (
       <DummyContent
         title="Meditation & Relaxation"
@@ -67,7 +67,7 @@ const data = [
     category: "E Commerce",
     title: "GearHut.",
     src: "/images/Projects/newgear.jpg",
-    link: "https://example.com/gearhut",
+    link: "https://gear-hut.vercel.app/pages/shop.html",
     content: (
       <DummyContent
         title="GearHut - Your Ultimate Shopping Hub"
@@ -80,7 +80,7 @@ const data = [
     category: "React App",
     title: "POS System.",
     src: "/images/Projects/pos stats.png",
-    link: "https://example.com/pos-system",
+    link: "",
     content: (
       <DummyContent
         title="POS System"
@@ -93,7 +93,7 @@ const data = [
     category: "Web-App",
     title: "Cakes and Pastries website.",
     src: "/images/Projects/rummy.jpg",
-    link: "https://example.com/rummyyummy",
+    link: "https://rummyyummy.vercel.app/",
     content:  (
       <DummyContent
       title="RummyYummy Cakes and Pastries"
@@ -106,7 +106,7 @@ const data = [
     category: "Web-App",
     title: "Fraud Detection System using ML.",
     src: "/images/Projects/face.jpg",
-    link: "https://example.com/fraud-detection",
+    link: "https://github.com/kuski-jabir/FinalBITProject",
     content:  (
       <DummyContent
       title="AI-Powered Fraud Detection"
@@ -119,7 +119,7 @@ const data = [
     category: "Web-App",
     title: "RealEstate Management System.",
     src: "/images/Projects/realestate.png",
-    link: "https://example.com/realestate",
+    link: "",
     content: (
       <DummyContent
         title="RealEstate Management"
