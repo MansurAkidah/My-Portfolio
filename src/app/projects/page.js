@@ -34,30 +34,30 @@ export default function Index() {
   return (
     <main className={styles.main}>
       <Header />
-      <Landing />
+      {/* <Landing /> */}
       <Description />
       {
-            projectsHome.map((project, i) => {
-              const targetScale = 1 - ((projectsHome.length - 1 - i) * 0.02);
-              const rangeStart = i * 0.15;
-              const rangeEnd = Math.min(1, rangeStart + 0.4);
-              
-              return (
-                <Card 
-                  key={`project_${i}`}
-                  i={i}
-                  title={project.title}
-                  description={project.description}
-                  src={project.src}
-                  link={project.link}
-                  color={project.color}
-                  progress={scrollYProgress}
-                  range={[rangeStart, rangeEnd]}
-                  targetScale={targetScale}
-                />
-              );
-            })
-          }
+        projectsHome.map((project, i) => {
+          const targetScale = 1 - ((projectsHome.length - 1 - i) * 0.02);
+          const rangeStart = i * 0.15;
+          const rangeEnd = Math.min(1, rangeStart + 0.4);
+          
+          return (
+            <Card 
+              key={`project_${i}`}
+              i={i}
+              title={project.title}
+              description={project.description}
+              src={project.src}
+              link={project.link}
+              color={project.color}
+              progress={scrollYProgress}
+              range={[rangeStart, rangeEnd]}
+              targetScale={targetScale}
+            />
+          );
+        })
+      }
       <Contact /> 
     </main>
   )
