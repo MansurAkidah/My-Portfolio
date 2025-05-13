@@ -89,7 +89,7 @@ export const projects = [
 export const projectsHome = [
     {
       title: "Fraud Detection system",
-      description: "Python/TensorFlow-based fraud detection system utilizing machine learning for real-time transaction monitoring and anomaly detection.",
+      description: "Microsofts ML.NET based fraud detection system utilizing machine learning for real-time transaction monitoring and anomaly detection.",
       src: "Screenshot (233).png",
       link: "https://github.com/kuski-jabir/FinalBITProject.git", 
       color: "#BBACAF"
@@ -110,14 +110,14 @@ export const projectsHome = [
     },
     {
       title: "GearHut",
-      description: "React/Next.js e-commerce platform with Redux state management and Stripe payment integration.",
+      description: "Sophisticated e-commerce platform built with HTML5 and Knockout.js featuring responsive product catalogs, real-time inventory management, and an intuitive shopping cart experience. Implemented with modern UI/UX principles to maximize conversion rates.",
       src: "Screenshot (243).png",
       link: "https://g-hut-eight.vercel.app/",
       color: "#88A28D"
     },
     {
       title: "E-migration",
-      description: "React-based immigration agency management system with automated workflow and document processing.",
+      description: "ASP.NET immigration agency management system with automated workflow and document processing.",
       src: "Screenshot (238).png",
       link: "https://www.example.com",
       color: "#C2491D"
@@ -128,13 +128,6 @@ export const projectsHome = [
       src: "Screenshot (239).png",
       link: "https://www.example.com",
       color: "#88A28D"
-    },
-    {
-      title: "The Flash",
-      description: "Kotlin Android utility app for flashlight control with material design and gesture controls.",
-      src: "Screenshot (243).png",
-      link: "https://github.com/Merns999/TheFlash",
-      color: "#977F6D"
     },
     {
       title: "Golden Ticket",

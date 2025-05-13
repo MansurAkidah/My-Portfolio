@@ -5,11 +5,11 @@ import { Timeline } from "./timeline";
 export default function TimelineDemo() {
   const data = [
     {
-        title: "2025 (Expected Graduation)",
+        title: "June 2025",
         content: (
           <div>
             <p className="text-white dark:text-neutral-200 text md:text font-normal mb-8">
-              Expected to graduate with a Bachelor&apos;s degree in Information Technology from JKUAT.
+              Graduating on June 2025 with a Bachelor&apos;s degree in Information Technology from JKUAT.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <Image

@@ -64,7 +64,7 @@ export default function Index() {
                             <p><a href='mailto:akidahmansur@gmail.com' target='_blank'>Gmail</a></p>
                         </Magnetic>
                         <Magnetic>
-                            <p><a href='https://www.instagram.com/mern.s.u.r/' target='_blank'>Instagram</a></p>
+                            <p><a href='https://www.instagram.com/its.mansur/' target='_blank'>Instagram</a></p>
                         </Magnetic>
                         {/* <Magnetic>
                             <p><a href='#' target='_blank'></a>Dribbble</p>
