@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 import TrueFocus from './truefocus'
 
-const phrase = "I'm a passionate full-stack developer who specializes in creating visually stunning, reactive interfaces. With deep knowledge of backend development, I excel at architecting clear, efficient data pipelines that power responsive applications. This dual expertise allows me to bridge the gap between user needs and technical implementation, delivering solutions that are both beautiful and performant.";
+const phrase = "I'm a passionate full-stack developer who specializes in creating visually stunning, reactive and user-friendly interfaces. With dual expertise in both frontend and backend, this allows me to bridge the gap between user needs and technical implementation, delivering solutions that are both beautiful and performant.";
 
 export default function Home() {
 
